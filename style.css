@@ -1,0 +1,106 @@
+/* MOBILE */
+
+:root{
+    --d-cyan: hsl(185, 75%, 39%);
+    --vd-blue: hsl(229, 23%, 23%);
+    --dg-blue: hsl(227, 10%, 46%);
+    --d-gray: hsl(0, 0%, 59%);
+}
+
+
+.clr-d-cyan{color: hsl(185, 75%, 39%);}
+.clr-vd-blue{color: hsl(229, 23%, 23%);} 
+.clr-dg-blue{color: hsl(227, 10%, 46%);} 
+.clr-d-gray{color: hsl(0, 0%, 59%);} 
+
+.bg-d-cyan{background-color: hsl(185, 75%, 39%);}
+.bg-vd-blue{background-color: hsl(229, 23%, 23%);} 
+.bg-dg-blue{background-color: hsl(227, 10%, 46%);} 
+.bg-d-gray{background-color: hsl(0, 0%, 59%);} 
+
+
+section .profile-name, .stat-number{
+    color: var(--vd-blue);
+}
+
+section span, .profile-country, .stat-text{
+    color: var(--dg-blue);
+}
+
+body{
+    display: grid;
+    place-content: center;
+    line-height: 1.5;
+    height: 100%;
+    min-height: 100vh;
+    background: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg); /* right 45vw bottom 40vh, left 45vw top 40vh no-repeat; */
+    background-repeat: no-repeat;
+    background-position: right 40vw bottom 62vh, left 45vw top 52vh;
+    background-size: cover;
+}
+
+.main-p-card{
+    max-width: 324px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 12px;
+    text-align: -webkit-center;
+    box-shadow: hsl(229deg 24% 24% / 50%) 0 12px 50px 0;
+}
+
+.pp{
+    margin-block-start: -3.2em;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.profile-name, .stat-number{
+    font-size: 1rem;
+}
+
+.age{
+    margin-inline-start: 0.3em;
+    font-weight: 400;
+}
+
+.profile-country{
+    font-size: 0.8em;
+    margin-block: -0.6em 1.4em;
+}
+hr{
+    border-color: hsl(0deg 0% 59% / 14%);
+    border-width: 0.003em;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 0.5em 1em;
+
+}
+
+.stats .stat-text{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+.stat-number, .stat-text{
+    margin: 0.2em;
+}
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 400px){
+    body{
+        background-position: right 51vw bottom 35vh, left 47vw top 52vh;
+        background-size: auto;
+    }
+
+    .main-p-card{
+        max-width: 348px;
+    }
+    
+}
